@@ -21,7 +21,7 @@ function setEngine(engine) {
 
 function setUser(name) {
   localStorage.setItem("username", name);
-  username.innerText = "Komusta," + name;
+  username.innerText = "Komusta, " + name;
   userSel.value = name;
 }
 
