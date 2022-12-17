@@ -64,13 +64,13 @@ const bookmarks = [
       },
       {
         id: "BeFWwLqVKKB5Krti",
-        label: "Docs",
-        url: "https://docs.google.com/document/u/0/?tgif=d",
+        label: "Notion",
+        url: "https://www.notion.so/The-Dashboard-6d01acbb21124d2c87b72fc0d4f4f28e",
       },
       {
         id: "90I73U3mOP0UIivF",
-        label: "Slides",
-        url: "https://docs.google.com/presentation/u/0/",
+        label: "Docs",
+        url: "https://docs.google.com/document/u/0/?tgif=d",
       },
       {
         id: "yVWjfZEVb4PjIuen",
