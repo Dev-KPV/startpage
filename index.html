@@ -1,29 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.ico" />
-    <link href="./styles.css" rel="stylesheet"> 
-    <title>New tab</title>
-  </head>
-  <body>
-    <div class="surface">
-      <img src="https://i.gifer.com/Ir9.gif" alt="" />
-      <main>
-        <h1>Its busting Kalli aka Mugen!</h1>
-        <div id="searchbar">
-          <button>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <span class="visually-hidden">Search</span>
-          </button>
-          <input type="text" placeholder="Search the web" autofocus />
-        </div>
-        <div id="bookmarks">
-          <!-- Bookmarks will get inserted here! -->
-        </div>
-      </main>
+<html>
+
+<head>
+  <title>New tab</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link rel="preload" as="font" href="fonts/Fira Code Regular Nerd Font Complete.woff2" type="font/woff2"
+    crossorigin="anonymous" />
+  <script defer src="scripts/time.js"></script>
+  <script defer src="scripts/script.js"></script>
+  <script defer src="scripts/popup.js"></script>
+  <script defer src="scripts/keybinding.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="img-holder">
+      <img src="images/startpage.png" alt="Startpage image" id="startImg" />
+      <div class="time-container" id="time">00<br />--<br />00</div>
     </div>
-    <a id="yags-link" href="https://github.com/Dev-KPV/startpage/edit/main/scripts.js">Update Bookmarks</a>
-  </body>
-  <script type="text/javascript" src="./scripts.js"></script>
+    <div class="main">
+      <h1 class="greeting" id="username">Komusta, Kalli!</h1>
+      <h2 id="today">Today is someday</h2>
+      <div class="searchbox">
+        <input type="search" id="search" />
+        <button id="searchButton">&#61442;</button>
+      </div>
+      <div class="bookmarks">
+        
+        <div class="bookmarks-row">
+          <a href="https://github.com/Dev-KPV">Github</a>
+          <a href="https://nam.inna.is">Inna </a>
+          <a href="https://docs.google.com/document/u/0/?tgif=d">Docs</a>
+          <a href="https://www.notion.so/The-Dashboard-6d01acbb21124d2c87b72fc0d4f4f28e">Notion</a>
+        </div>
+        <div class="bookmarks-row">
+          <a href="https://gmail.com">Gmail</a>
+          <a href="https://www.landsbankinn.is/einstaklingar?gclid=CjwKCAiA-dCcBhBQEiwAeWidtVMgWv6MtMhMx1WFrO0n18hNLkmfHi1ucGAfQEjDIEai9Finswf0eRoC3HMQAvD_BwE">Bank</a>
+          <a href="https://www.twitter.com/">Twitter</a>
+          <a href="https://www.reddit.com/">Reddit</a>
+        </div>
+        <div class="bookmarks-row">
+          <a href="https://exercism.org/tracks">Exercism</a>
+          <a href="https://www.freecodecamp.org/learn">freeCodeCamp</a>
+          <a href="https://leetcode.com/">LeetCode</a>
+          <a href="https://stackoverflow.com/">StackOverflow</a>
+        </div>
+        <div class="bookmarks-row">
+          <a href="https://monkeytype.com/">Monkey-Type</a>
+          <a href="https://dev.to/karlp">dev.to</a>
+          <a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit">Visit These</a>
+          <a href="https://edabit.com/challenges">Daily Challenges</a>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="settings" class="modal">
+      <h2>Settings</h2>
+
+      <div class="field">
+        <label for="titleSel">Title</label>
+        <input class="input-field" type="text" id="titleSel" placeholder="Title for the startpage" value="New Tab" />
+      </div>
+
+      <div class="field">
+        <label for="userSel">Username</label>
+        <input class="input-field" type="text" id="userSel" placeholder="Username" value="Kalli" />
+      </div>
+
+      <div class="field">
+        <label for="imgSel">Image</label>
+        <input class="input-field" type="text" id="imgSel" placeholder="Image in the startpage"
+          value="https://i.pinimg.com/originals/d7/72/50/d772502caf0fa2366d5939f90523187d.gif" />
+      </div>
+
+
+      <div class="field">
+        <label for="engineSel">Search Engine</label>
+        <select class="input-field" name="engine" id="engineSel">
+          <option value="google" selected>Google</option>
+          <option value="duckduckgo">Duck Duck Go</option>
+        </select>
+      </div>
+
+      <form method="dialog">
+        <input class="btn" type="submit" name="savePref" value="Save" id="savePref" />
+      </form>
+    </dialog>
+  </div>
+</body>
+
 </html>
