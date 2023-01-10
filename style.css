@@ -12,8 +12,8 @@
 }
 
 :root {
-  --bg-color: #282a36;
-  --bg-dim-color: #303241;
+  --bg-color: #1a1a1a;
+  --bg-dim-color: #404040;
   --fg-color: #eee;
   --search-input-color: #f8f8f2;
   --search-btn-color: #6272a4;
@@ -21,7 +21,7 @@
   --primary-dim-color: rgba(80, 250, 123, 0.7);
   --secondary-color: rgb(189, 147, 249);
   --secondary-dim-color: hsl(265 89% 70%);
-  --third-color: #44475a;
+  --third-color: #404040;
 }
 
 body {
@@ -105,7 +105,7 @@ body {
 .main {
   width: 100%;
   padding: 1.5em;
-  background-color: hsla(232, 14%, 31%, 0.3);
+  background-color: #1e1e1e;
   overflow: auto;
   scrollbar-color: var(--secondary-color) var(--third-color);
   scrollbar-width: thin;
